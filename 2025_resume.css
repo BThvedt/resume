@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 30px 10px;
-  line-height: 1.6;
+  line-height: 1.45;
 }
 
 .page {
@@ -26,7 +26,7 @@ body {
   width: 850px;
   min-height: 1100px;
   display: grid;
-  grid-template-columns: 215px 1fr;
+  grid-template-columns: 205px 1fr;
   position: relative;
   box-shadow: 0 4px 30px rgba(0,0,0,0.15);
 }
@@ -34,14 +34,14 @@ body {
 /* ── LEFT COLUMN ── */
 .left {
   background: white;
-  padding: 31px 20px 30px 24px;
+  padding: 31px 16px 30px 18px;
   border-right: 1px solid #eee;
 }
 
 .photo-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .photo-circle {
@@ -65,7 +65,7 @@ body {
 }
 
 .contact {
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   font-size: 13px;
   color: var(--muted-strong);
 }
@@ -90,7 +90,7 @@ body {
   font-size: 13px;
   letter-spacing: 0.05em;
   padding: 5px 12px;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   position: relative;
   display: flex;
   align-items: center;
@@ -125,7 +125,7 @@ body {
 .star.empty { background: var(--star-empty); }
 
 /* Education, Fun Projects */
-.left-section { margin-bottom: 16px; }
+.left-section { margin-bottom: 11px; }
 
 .muted-bold {
   font-size: 12.5px;
@@ -164,7 +164,7 @@ body {
 
 /* ── RIGHT COLUMN ── */
 .right {
-  padding: 28px 35px 30px 28px;
+  padding: 28px 16px 30px 18px;
 }
 
 .name {
@@ -174,7 +174,7 @@ body {
   letter-spacing: -0.01em;
   color: var(--text);
   line-height: 1;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 /* Title banner */
@@ -187,7 +187,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   padding: 5px 14px;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
   position: relative;
 }
 
@@ -213,14 +213,14 @@ body {
 .summary {
   font-size: 13px;
   color: var(--muted);
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 
 /* Experience section header */
 .exp-header {
   display: flex;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 
 .exp-label {
@@ -228,7 +228,7 @@ body {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   padding: 5px 16px;
   position: relative;
 }
@@ -240,13 +240,12 @@ body {
 }
 
 /* Job entries */
-.job { margin-bottom: 16px; }
+.job { margin-bottom: 11px; }
 
 .job-header {
   display: flex;
   align-items: baseline;
   gap: 10px;
-  margin-bottom: 4px;
 }
 
 .job-company {
@@ -266,13 +265,13 @@ body {
   font-weight: 700;
   font-size: 13px;
   color: var(--muted-strong);
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 }
 
 .job-desc {
   font-size: 13px;
   color: var(--muted);
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 }
 
 .job ul {
