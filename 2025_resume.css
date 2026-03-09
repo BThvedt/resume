@@ -11,22 +11,36 @@
   --muted-strong: #3b3b3b;
 }
 
+/* important for printing */
+@page {
+  size: 8.5in 11in;
+  margin: 0.5in;
+}
+
+/* html, body, .page {
+  width: 8.5in;
+  max-height: 11in;
+  margin: 0;
+  overflow: hidden;
+} */
+
 body {
+  width: 8.5in;
+  max-height: 11in;
   font-family: 'Source Serif 4', Georgia, serif;
   background: #f4f4f4;
   color: var(--text);
   display: flex;
   justify-content: center;
   padding: 30px 10px;
-  line-height: 1.45;
+  line-height: 1.53;
+  margin: auto;
 }
 
 .page {
   background: white;
-  width: 850px;
-  min-height: 1100px;
-  display: grid;
-  grid-template-columns: 205px 1fr;
+  display: flex;
+  /* grid-template-columns: 205px 1fr; */
   position: relative;
   box-shadow: 0 4px 30px rgba(0,0,0,0.15);
 }
@@ -34,8 +48,10 @@ body {
 /* ── LEFT COLUMN ── */
 .left {
   background: white;
-  padding: 31px 16px 30px 18px;
+  padding: 28px 16px 30px 18px;
   border-right: 1px solid #eee;
+  width: 210px;
+  flex-shrink: 0;
 }
 
 .photo-wrap {
@@ -164,6 +180,8 @@ body {
 
 /* ── RIGHT COLUMN ── */
 .right {
+  flex: 1;
+  min-width: 0; 
   padding: 28px 16px 30px 18px;
 }
 
@@ -185,7 +203,7 @@ body {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   padding: 5px 14px;
   margin-bottom: 11px;
   position: relative;
@@ -211,7 +229,7 @@ body {
 .chev:nth-child(4) { opacity: 0.07; }
 
 .summary {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
   margin-bottom: 11px;
 }
@@ -228,7 +246,7 @@ body {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   padding: 5px 16px;
   position: relative;
 }
@@ -251,32 +269,32 @@ body {
 .job-company {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--teal-dark);
 }
 
 .job-dates {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
 }
 
 .job-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted-strong);
   margin-bottom: 4px;
 }
 
 .job-desc {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
   margin-bottom: 4px;
 }
 
 .job ul {
   padding-left: 16px;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
 }
 
